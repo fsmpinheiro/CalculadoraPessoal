@@ -7,6 +7,17 @@
     tools:context=".Principal">
 
     <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="239dp"
+        android:layout_weight="1"
+        android:text="Operações" />
+
+    <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,12 +67,10 @@
         android:id="@+id/button_Resultado"
         android:layout_width="122dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="131dp"
-        android:layout_marginEnd="131dp"
-        android:layout_marginBottom="274dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="34dp"
         android:text="Resultado" />
 
     <EditText
@@ -69,12 +78,152 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="85dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginBottom="105dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="36dp"
+        android:layout_toStartOf="@+id/button_Resultado"
         android:ems="10"
         android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/kpad1"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toEndOf="@+id/kpad0"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/kpad0"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="100dp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/kpad5"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/kpad0"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="20dp"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/kpadSoma"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/kpadSubt"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/kpadSoma"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/kpadMultip"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/kpadSubt"
+        android:text="x" />
+
+    <Button
+        android:id="@+id/kpadDivs"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/kpadMultip"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/kpad6"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/kpad1"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/kpad5"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/kpad7"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/kpad2"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/kpad6"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/kpad8"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/kpad3"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/kpad7"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/kpad9"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/kpad4"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/kpad8"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/kpad2"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toEndOf="@+id/kpad1"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/kpad3"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toEndOf="@+id/kpad2"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/kpad4"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toEndOf="@+id/kpad3"
+        android:text="4" />
 
 </RelativeLayout>
